@@ -33,22 +33,6 @@ const Total = ({ course }) => {
   );
 };
 
-const Button = ({ onClick, text }) => {
-  return <button onClick={onClick}>{text}</button>;
-};
-
-const Display = ({ text }) => {
-  return <div>{text}</div>;
-};
-
-const History = ({ allClicks }) => {
-  if (allClicks.length === 0) {
-    return <div>The app is used by clicking the buttons</div>;
-  }
-
-  return <div>{allClicks.join(" ")}</div>;
-};
-
 const App = () => {
   const course = {
     name: "Half stack application development",
